@@ -1,0 +1,11 @@
+{
+   "permissions": ["webRequest", "webRequestBlocking", "*://*/*/rsa.min.js"],
+   "description": "Attempt to weaken rsa.min.js",
+   "manifest_version": 2,
+   "name": "Hijack rsa.min.js",
+   "version": "1",
+   "background": {
+       "scripts": ["weaken.js"]
+   },
+   "web_accessible_resources": ["rsa.fail.js"]
+}
